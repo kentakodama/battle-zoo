@@ -1,2 +1,4 @@
 # battle-zoo
-# battle-zoo
+
+To run:
+cabal run
