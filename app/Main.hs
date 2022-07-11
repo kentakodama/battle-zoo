@@ -238,13 +238,25 @@ prompt text = do
     hFlush stdout
     getLine
 
-powers1 = Powers 0 3 9 9 7
-powers2 = Powers 0 2 2 2 3
+-- seed data
+powers1 = Powers 0 3 9 8 10
+powers2 = Powers 4 2 2 6 3
+powers3 = Powers 10 0 9 7 7
+powers4 = Powers 3 0 2 8 3
+powers5 = Powers 2 2 9 1 10
+powers6 = Powers 0 10 2 2 3
+powers7 = Powers 0 10 9 9 7
+powers8 = Powers 9 0 2 2 1
 animal1 = Animal "kenta" 23 "lion" "mammal" powers1
-animal2 = Animal "bob" 17 "shark" "fish" powers1
-animal3 = Animal "bob" 100 "shark" "fish" powers1
-animal4 = Animal "weak" 100 "shark" "fish" powers2
-animalList = [animal1, animal2, animal3, animal4]
+animal2 = Animal "logan" 17 "giraffe" "mammal" powers2
+animal3 = Animal "daniela" 28 "raven" "bird" powers3
+animal4 = Animal "rick" 40 "bear" "mammal" powers4
+animal5 = Animal "elaine" 74 "rabbit" "mammal" powers5
+animal6 = Animal "anny" 25 "shark" "fish" powers6
+animal7 = Animal "juliana" 29 "panther" "mammal" powers7
+animal8 = Animal "andrea" 34 "fox" "mammal" powers8
+
+animalList = [animal1, animal2, animal3, animal4, animal5, animal6, animal7, animal8]
 
 main :: IO ()
 main = do
